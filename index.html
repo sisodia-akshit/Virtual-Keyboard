@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Virtual Kayboard</title>
+</head>
+
+<body>
+    <div class="board">
+        <div class="row">
+            <textarea name="msg" id="msg"></textarea>
+        </div>
+        <div class="row">
+            <button onclick="num(1)">1</button>
+            <button onclick="num(2)">2</button>
+            <button onclick="num(3)">3</button>
+            <button onclick="num(4)">4</button>
+            <button onclick="num(5)">5</button>
+            <button onclick="num(6)">6</button>
+            <button onclick="num(7)">7</button>
+            <button onclick="num(8)">8</button>
+            <button onclick="num(9)">9</button>
+            <button onclick="num(0)">0</button>
+        </div>
+
+        <div class="row" id="Q-row">
+            <button onclick="num('Q')">Q</button>
+            <button onclick="num('W')">W</button>
+            <button onclick="num('E')">E</button>
+            <button onclick="num('R')">R</button>
+            <button onclick="num('T')">T</button>
+            <button onclick="num('Y')">Y</button>
+            <button onclick="num('U')">U</button>
+            <button onclick="num('I')">I</button>
+            <button onclick="num('O')">O</button>
+            <button onclick="num('P')">P</button>
+        </div>
+        <div class="hrow" id="q-row">
+            <button onclick="num('q')">q</button>
+            <button onclick="num('w')">w</button>
+            <button onclick="num('e')">e</button>
+            <button onclick="num('r')">r</button>
+            <button onclick="num('t')">t</button>
+            <button onclick="num('y')">y</button>
+            <button onclick="num('u')">u</button>
+            <button onclick="num('i')">i</button>
+            <button onclick="num('o')">o</button>
+            <button onclick="num('p')">p</button>
+        </div>
+
+        <div class="row" id="A-row">
+            <button onclick="num('A')">A</button>
+            <button onclick="num('S')">S</button>
+            <button onclick="num('D')">D</button>
+            <button onclick="num('F')">F</button>
+            <button onclick="num('G')">G</button>
+            <button onclick="num('H')">H</button>
+            <button onclick="num('J')">J</button>
+            <button onclick="num('K')">K</button>
+            <button onclick="num('L')">L</button>
+        </div>
+
+        <div class="hrow" id="a-row">
+            <button onclick="num('a')">a</button>
+            <button onclick="num('s')">s</button>
+            <button onclick="num('d')">d</button>
+            <button onclick="num('f')">f</button>
+            <button onclick="num('g')">g</button>
+            <button onclick="num('h')">h</button>
+            <button onclick="num('j')">j</button>
+            <button onclick="num('k')">k</button>
+            <button onclick="num('l')">l</button>
+        </div>
+
+        <div class="row" id="Z-row">
+            <button class="shift" id="shift" onclick="shift()"><i class="fa-solid fa-up-long"></i></button>
+            <button onclick="num('Z')">Z</button>
+            <button onclick="num('X')">X</button>
+            <button onclick="num('C')">C</button>
+            <button onclick="num('V')">V</button>
+            <button onclick="num('B')">B</button>
+            <button onclick="num('N')">N</button>
+            <button onclick="num('M')">M</button>
+            <button class="delete" onclick="delet()"><i class="fa-solid fa-delete-left"></i></button>
+
+        </div>
+
+        <div class="hrow" id="z-row">
+            <button class="hshift"  id="hshift" onclick="hshift()"><i class="fa-solid fa-up-long"></i></button>
+            <button onclick="num('z')">z</button>
+            <button onclick="num('x')">x</button>
+            <button onclick="num('c')">c</button>
+            <button onclick="num('v')">v</button>
+            <button onclick="num('b')">b</button>
+            <button onclick="num('n')">n</button>
+            <button onclick="num('m')">m</button>
+            <button class="delete" onclick="delet()"><i class="fa-solid fa-delete-left"></i></button>
+        </div>
+
+
+        <div class="row">
+            <button class="space" onclick="num(' ')">Space</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
